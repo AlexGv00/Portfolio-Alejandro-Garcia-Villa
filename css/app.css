@@ -1,0 +1,669 @@
+@charset "UTF-8";
+/* Aquí definimos las Custom properties */
+:root {
+  --negro: #393939;
+  --blanco: #ececec;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #ffffff;
+  --borde-negro: #00000050;
+  --marcado: rgb(127, 195, 255);
+  /* Tipografía */
+  --tipo-principal: Helvetica, Arial, sans-serif;
+}
+
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+    --blanco: #303030;
+    --sombra-ppal: #242424;
+    --sombra-sec: #3c3c3c;
+    --borde-negro: #FFFFFF50;
+  }
+}
+/* Configuramos si un usuario ha activado el modo alto contraste. (BETA) */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+video {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, strong, a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  display: block;
+}
+
+body {
+  font-family: var(--tipo-principal);
+  font-size: 100%;
+  min-height: 100vh;
+  background-color: var(--blanco);
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: Bebas;
+  src: url(../assets/fuentes/bebas/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: Rajdhani1;
+  src: url(../assets/fuentes/rajdhani/Rajdhani-Light.ttf);
+}
+@font-face {
+  font-family: Rajdhani2;
+  src: url(../assets/fuentes/rajdhani/Rajdhani-Medium.ttf);
+}
+@font-face {
+  font-family: Rajdhani3;
+  src: url(../assets/fuentes/rajdhani/Rajdhani-Regular.ttf);
+}
+@font-face {
+  font-family: Rajdhani4;
+  src: url(../assets/fuentes/rajdhani/Rajdhani-SemiBold.ttf);
+}
+@font-face {
+  font-family: Rajdhani5;
+  src: url(../assets/fuentes/rajdhani/Rajdhani-Bold.ttf);
+}
+@font-face {
+  font-family: Teko1;
+  src: url(../assets/fuentes/teko/Teko-Light.ttf);
+}
+@font-face {
+  font-family: Teko2;
+  src: url(../assets/fuentes/teko/Teko-Medium.ttf);
+}
+@font-face {
+  font-family: Teko3;
+  src: url(../assets/fuentes/teko/Teko-Regular.ttf);
+}
+@font-face {
+  font-family: Teko4;
+  src: url(../assets/fuentes/teko/Teko-SemiBold.ttf);
+}
+@font-face {
+  font-family: Teko5;
+  src: url(../assets/fuentes/teko/Teko-Bold.ttf);
+}
+body {
+  background-color: linen;
+}
+
+.landing {
+  height: 200vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing .hola {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  text-align: center;
+}
+
+.landing .hola .p {
+  font-family: Bebas;
+  font-size: 250px;
+  color: #f55550;
+  color: #bdd9bf;
+  color: #323234;
+  color: linen;
+  font-weight: 800;
+}
+
+.landing .hola .p2 {
+  font-family: Teko5;
+  font-size: 45px;
+  color: #f55550;
+  color: #bdd9bf;
+  color: #f0a50a;
+  color: #323234;
+  color: linen;
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-fill-color: transparent;
+}
+
+.landing .hola .p3 {
+  width: 100%;
+  position: absolute;
+  font-family: Teko5;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: linen;
+}
+
+.landing .descripcion {
+  background-color: #323234;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+.landing .descripcion .p {
+  font-family: Bebas;
+  font-size: 125px;
+  color: #f55550;
+  color: #bdd9bf;
+  color: #323234;
+  color: linen;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+.landing .descripcion .p2 {
+  font-family: Teko5;
+  font-size: 45px;
+  color: #f55550;
+  color: #bdd9bf;
+  color: #f0a50a;
+  color: #323234;
+  color: linen;
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-fill-color: transparent;
+}
+
+.landing .descripcion .p3 {
+  width: 100%;
+  position: absolute;
+  font-family: Teko5;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: linen;
+}
+
+.landing .descripcion .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing .descripcion .redes .img {
+  margin: 50px 25px 25px 25px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.landing .descripcion .redes .img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.landing .color1 {
+  width: 50%;
+  height: 200vh;
+  background-color: #fff7eb;
+  background-color: #f55550;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.landing .color1.activo {
+  width: 100%;
+}
+
+.landing .color2 {
+  width: 50%;
+  height: 200vh;
+  background-color: #323234;
+}
+
+.proyectos {
+  width: 100%;
+  height: 150vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.proyectos .p {
+  width: 100%;
+  height: 5%;
+  background-color: linen;
+  text-align: center;
+  font-family: Rajdhani5;
+  font-size: 75px;
+  margin: 50px;
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-fill-color: transparent;
+}
+
+.proyectos .imagenes {
+  width: 50%;
+  height: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.proyectos .imagenes .foto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.proyectos .imagenes .foto:first-child {
+  width: 100%;
+  height: 55vh;
+  background-image: url(../assets/imagenes/WebArquitectura.JPG);
+  background-size: cover;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+.proyectos .imagenes .foto:last-child {
+  width: 100%;
+  height: 55vh;
+  background-image: url(../assets/imagenes/Portfolio2.JPG);
+  background-size: cover;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+.proyectos .imagenes .overlay {
+  position: relative;
+}
+
+.proyectos .imagenes .overlay::before {
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  background-color: rgba(0, 0, 0, 0);
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.proyectos .imagenes .overlay:hover .titulo .p {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+
+.proyectos .imagenes .overlay:hover::before {
+  background-color: linen;
+}
+
+.proyectos .imagenes .foto .titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.proyectos .imagenes .foto .titulo .p {
+  font-family: Rajdhani5;
+  font-size: 50px;
+  background-color: transparent;
+  position: relative;
+  text-align: center;
+  -webkit-text-stroke: 0px;
+  -webkit-text-fill-color: #323234;
+  opacity: 0;
+  -webkit-transform: translateY(-400%);
+          transform: translateY(-400%);
+  -webkit-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
+
+.aptitudes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: linen;
+}
+
+.aptitudes .div {
+  width: 70%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aptitudes .div .izquierda {
+  text-align: left;
+  padding-left: 15%;
+  color: #f55550;
+}
+
+.aptitudes .div .derecha {
+  padding-right: 20%;
+  text-align: right;
+}
+
+.aptitudes .div .centro {
+  text-align: center;
+  color: #f55550;
+}
+
+.aptitudes .div p {
+  width: 100%;
+  font-family: teko5;
+  font-size: 110px;
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-fill-color: transparent;
+  margin: -50px 0 0 0;
+}
+
+.aptitudes .span {
+  display: inline-block;
+  margin: 0 0.1em 0 0.15em;
+  opacity: 0.75;
+}
+
+.footer {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer .marquee {
+  width: 100%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #323234;
+}
+
+.footer .marquee .desplaza {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 200%;
+          flex: 0 0 200%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: desplazar 20s linear infinite both;
+          animation: desplazar 20s linear infinite both;
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-fill-color: transparent;
+  color: #323234;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.footer .marquee .desplaza:hover {
+  color: #f55550;
+  -webkit-text-fill-color: #f55550;
+  -webkit-text-stroke: 0px;
+}
+
+.footer .marquee .desplaza .p {
+  width: calc(100%/ 4);
+  font-family: teko5;
+  font-size: 60px;
+}
+
+.footer .cuadrado {
+  width: 98%;
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #323234;
+  position: absolute;
+  bottom: 0;
+  margin: 2% 2% 1% 2%;
+  z-index: 2;
+}
+
+.footer .cuadrado .texto {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .cuadrado .texto .a {
+  font-family: termina, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+  color: linen;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer .cuadrado .texto .a:hover {
+  color: #f55550;
+}
+
+@-webkit-keyframes desplazar {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@keyframes desplazar {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  to {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
