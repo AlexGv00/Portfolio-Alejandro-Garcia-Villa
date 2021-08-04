@@ -5,8 +5,8 @@ Este proyecto ha sido creado con HTML, CSS y JavaScript. Utilizado como portfoli
 ## Autor ✒️
 **ALEJANDRO GARCIA VILLA**
 
-* [LinkedIn](www.linkedin.com/in/alejandrogarcíavilla)
-* [Github](https://github.com/AlexGv00)
+* [LinkedIn](www.linkedin.com/in/alejandrogarciav)
+* [Github](https://github.com/Alexgarciav)
 
 ## Ver ejemplo en vivo 
 - [https://alexgv00.github.io/Portfolio-Alejandro-Garcia-Villa/](https://alexgv00.github.io/Portfolio-Alejandro-Garcia-Villa/)
