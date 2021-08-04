@@ -2,7 +2,7 @@
 Pequeño proyecto de lista de tareas como forma de practicar Javascript
 No ha sido probado para tener soporte crossbrowsing.
 
-Este proyecto ha sido
+Este proyecto ha sido creado con HTML, CSS y JavaScript. Utilizado como portfolio personal y a su vez como proyecto final de desarrollo Front-End.
 
 
 ## Autor ✒️
@@ -12,7 +12,7 @@ Este proyecto ha sido
 * [Github](https://github.com/AlexGv00)
 
 ## Ver ejemplo en vivo 
-- [URL DE LA PAGINA](URL DE LA PAGINA)
+- [https://alexgv00.github.io/Portfolio-Alejandro-Garcia-Villa/](https://alexgv00.github.io/Portfolio-Alejandro-Garcia-Villa/)
 
 ## Instalación 
 Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
