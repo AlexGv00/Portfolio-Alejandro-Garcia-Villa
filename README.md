@@ -1,7 +1,4 @@
 ## Descripción 🏝
-Pequeño proyecto de lista de tareas como forma de practicar Javascript
-No ha sido probado para tener soporte crossbrowsing.
-
 Este proyecto ha sido creado con HTML, CSS y JavaScript. Utilizado como portfolio personal y a su vez como proyecto final de desarrollo Front-End.
 
 
