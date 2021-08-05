@@ -152,7 +152,7 @@ body {
 }
 
 .landing {
-  height: 200vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,7 +165,8 @@ body {
           justify-content: center;
 }
 
-.landing .hola {
+.landing .descripcion {
+  background-color: black;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -182,71 +183,43 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 0;
-  text-align: center;
+  background-image: url(../assets/imagenes/—Pngtree5—3drotatingabstractobjectstereo_5428828.png);
+  background-repeat: no-repeat;
+  background-size: 95vh;
+  background-position: center;
+  background-position-y: -30%;
+  -webkit-animation: fondoAnimado 20s linear infinite;
+          animation: fondoAnimado 20s linear infinite;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.landing .descripcion.activo {
+  background-color: linen;
 }
 
-.landing .hola .p {
-  font-family: Bebas;
-  font-size: 250px;
-  color: #f55550;
-  color: #bdd9bf;
-  color: #323234;
-  color: linen;
-  font-weight: 800;
-}
-
-.landing .hola .p2 {
-  font-family: Teko5;
-  font-size: 45px;
-  color: #f55550;
-  color: #bdd9bf;
-  color: #f0a50a;
-  color: #323234;
-  color: linen;
+.landing .descripcion span {
   -webkit-text-stroke: 1.5px;
   -webkit-text-fill-color: transparent;
 }
 
-.landing .hola .p3 {
-  width: 100%;
-  position: absolute;
-  font-family: Teko5;
-  left: 0;
-  bottom: 0;
-  text-align: center;
-  color: linen;
-}
-
-.landing .descripcion {
-  background-color: #323234;
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-}
-
 .landing .descripcion .p {
   font-family: Bebas;
+  font-family: Rajdhani5;
+  font-family: Teko5;
   font-size: 125px;
   color: #f55550;
   color: #bdd9bf;
-  color: #323234;
   color: linen;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: 5px;
+  -webkit-text-stroke: 2.5px;
+  -webkit-text-fill-color: transparent;
+}
+
+.landing .descripcion .p span {
+  -webkit-text-stroke: 0px;
+  -webkit-text-fill-color: linen;
+  font-weight: 800;
 }
 
 .landing .descripcion .p2 {
@@ -257,8 +230,6 @@ body {
   color: #f0a50a;
   color: #323234;
   color: linen;
-  -webkit-text-stroke: 1.5px;
-  -webkit-text-fill-color: transparent;
 }
 
 .landing .descripcion .p3 {
@@ -284,7 +255,14 @@ body {
           justify-content: center;
 }
 
+.landing .descripcion .redes2 {
+  width: 15%;
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
 .landing .descripcion .redes .img {
+  width: 60%;
   margin: 50px 25px 25px 25px;
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
@@ -293,24 +271,6 @@ body {
 .landing .descripcion .redes .img:hover {
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
-}
-
-.landing .color1 {
-  width: 50%;
-  height: 200vh;
-  background-color: #fff7eb;
-  background-color: #f55550;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-.landing .color1.activo {
-  width: 100%;
-}
-
-.landing .color2 {
-  width: 50%;
-  height: 200vh;
-  background-color: #323234;
 }
 
 .proyectos {
@@ -329,12 +289,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: black;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.proyectos.activo {
+  background-color: transparent;
 }
 
 .proyectos .p {
   width: 100%;
   height: 5%;
-  background-color: linen;
   text-align: center;
   font-family: Rajdhani5;
   font-size: 75px;
@@ -390,7 +355,7 @@ body {
 .proyectos .imagenes .foto:last-child {
   width: 100%;
   height: 55vh;
-  background-image: url(../assets/imagenes/Portfolio2.JPG);
+  background-image: url(../assets/imagenes/Captura2.jpg);
   background-size: cover;
   -webkit-transition: 0.75s;
   transition: 0.75s;
@@ -665,5 +630,65 @@ body {
   to {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+}
+@-webkit-keyframes fondoAnimado {
+  0% {
+    background-position-y: -30%;
+    background-position-x: 50%;
+  }
+  15% {
+    background-position-y: -60%;
+    background-position-x: 48%;
+  }
+  30% {
+    background-position-y: -30%;
+    background-position-x: 45%;
+  }
+  45% {
+    background-position-y: 0%;
+    background-position-x: 48%;
+  }
+  60% {
+    background-position-y: 30%;
+    background-position-x: 50%;
+  }
+  75% {
+    background-position-y: 0%;
+    background-position-x: 53%;
+  }
+  100% {
+    background-position-y: -30%;
+    background-position-x: 50%;
+  }
+}
+@keyframes fondoAnimado {
+  0% {
+    background-position-y: -30%;
+    background-position-x: 50%;
+  }
+  15% {
+    background-position-y: -60%;
+    background-position-x: 48%;
+  }
+  30% {
+    background-position-y: -30%;
+    background-position-x: 45%;
+  }
+  45% {
+    background-position-y: 0%;
+    background-position-x: 48%;
+  }
+  60% {
+    background-position-y: 30%;
+    background-position-x: 50%;
+  }
+  75% {
+    background-position-y: 0%;
+    background-position-x: 53%;
+  }
+  100% {
+    background-position-y: -30%;
+    background-position-x: 50%;
   }
 }
