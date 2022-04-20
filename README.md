@@ -9,7 +9,7 @@ Este proyecto ha sido creado con HTML, CSS y JavaScript. Utilizado como portfoli
 * [Github](https://github.com/Alexgarciav)
 
 ## Ver ejemplo en vivo 
-- [https://alexgv00.github.io/Portfolio-Alejandro-Garcia-Villa/](https://alexgv00.github.io/Portfolio-Alejandro-Garcia-Villa/)
+http://alexgarciavilla.com/portfolio/
 
 ## Instalación 
 Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
